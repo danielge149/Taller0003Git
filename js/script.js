@@ -102,5 +102,20 @@ document.addEventListener("DOMContentLoaded", function () {
                 return false;
         }
     }
+    btnConvertir.onclick = function () {
+        convertirTemperatura();
+    }
+
+    function convertirTemperatura(){
+        // Obtener el valor en grados Celsius
+        var grados= parseFloat(document.getElementById("tela").value);
+
+
+        // Convertir a Fahrenheit
+        var fahrenheit = (grados * 9/5) + 32;
+
+        // Mostrar el resultado en el campo de texto
+        document.getElementById("tela").value = fahrenheit.toFixed(2);
+    }
 
 });
