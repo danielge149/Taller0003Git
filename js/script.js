@@ -118,4 +118,70 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("tela").value = fahrenheit.toFixed(2);
     }
 
+    btnRaiz.onclick = function () {
+        sqrtFunction();
+    }
+    function sqrtFunction() {
+        const raiz = document.getElementById('tela').value;
+        const resulraiz = Math.sqrt(parseFloat(raiz));
+        document.getElementById('tela').value = resulraiz;
+    }
+
+    btnCuadrado.onclick = function () {
+        cuadradoFunction();
+    }
+
+    function cuadradoFunction() {
+        const cuadrado = document.getElementById('tela').value;
+        const resulcua = Math.pow(parseFloat(cuadrado), 2);
+        document.getElementById('tela').value = resulcua;
+    }
+
+    btnLog.onclick = function () {
+        logFunction();
+    }
+    function logFunction() {
+        const log = document.getElementById('tela').value;
+        const resullog = Math.log10(parseFloat(log));
+        document.getElementById('tela').value = resullog;
+    }
+
+    btnSeno.onclick = function () {
+        sinFunction();
+    }
+    function sinFunction() {
+        const seno = document.getElementById('tela').value;
+        const resulseno = Math.sin(parseFloat(seno)* (Math.PI / 180));
+        document.getElementById('tela').value = resulseno;
+    }
+
+    btnCoseno.onclick = function () {
+        cosFunction();
+    }
+    function cosFunction() {
+        const coseno = document.getElementById('tela').value;
+        const resulcoseno = Math.cos(parseFloat(coseno)* (Math.PI / 180));
+        document.getElementById('tela').value = resulcoseno;
+    }
+
+    btnTangente.onclick = function () {
+        tanFunction();
+    }
+    function tanFunction() {
+        const tangente = document.getElementById('tela').value;
+        const resultan = Math.tan(parseFloat(tangente)* (Math.PI / 180));
+        document.getElementById('tela').value = resultan;
+    }
+
+    btnLn.onclick = function () {
+        lnFunction();
+    }
+
+    function lnFunction() {
+        const ln = document.getElementById('tela').value;
+        const resulLN = Math.log(parseFloat(ln));
+        document.getElementById('tela').value = resulLN;
+    }
+
+
 });
