@@ -118,4 +118,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("tela").value = fahrenheit.toFixed(2);
     }
 
+
+    
 });
